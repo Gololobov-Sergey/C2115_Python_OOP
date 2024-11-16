@@ -4,7 +4,7 @@ import random
 class Human:
     def __init__(self, name, car=None, job=None):
         self.name = name
-        self.money = 100
+        self.money = 10000
         self.house = House()
         self.car = car
         self.job = job
@@ -57,7 +57,10 @@ class Human:
         print(self.job)
 
     def live(self, day):
-        pass
+        self.info()
+        if self.money > 500:
+            self.car = Car("Lanos")
+        self.shopping()
 
     def is_live(self):
         if self.money < 0:

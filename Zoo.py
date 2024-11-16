@@ -25,7 +25,7 @@ class Cat(Mammals):
         print("Mouse:", self.__mouse)
 
     def cathMouse(self):
-        print("I`m catc a mouse")
+        print("I`m cath a mouse")
         self.__mouse += 1
 
 class Dog(Mammals):

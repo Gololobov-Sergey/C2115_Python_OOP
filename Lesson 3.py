@@ -26,8 +26,10 @@ class Student:
 
 
 st1 = Student("Vasya", 20, 150)
+st2 = Student("Kolya", 21, 170)
 print(st1)
 
+st1.height = 100500
 
 st1.study()
 st1.study()
