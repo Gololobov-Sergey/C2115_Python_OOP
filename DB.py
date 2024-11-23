@@ -10,7 +10,7 @@ cur = connection.cursor()
 
 #===== INSERT =========
 # log = input("Login : ")
-# cur.execute(f"INSERT INTO users (login) VALUES ('{log}');")
+# cur.execute(f"INSERT INTO users (login, pass) VALUES ('{log}', '{pass}');")
 # connection.commit()
 # print("Users added!")
 
@@ -19,7 +19,7 @@ cur = connection.cursor()
 # cur.execute(f"SELECT * FROM users WHERE login='admin';")
 # connection.commit()
 # res = cur.fetchall()
-# print(res)
+# print(res[0][0])
 
 
 #===== UPDATE ========
@@ -28,8 +28,8 @@ cur = connection.cursor()
 
 
 #===== DELETE =======
-cur.execute(f"DELETE FROM users WHERE login='anna';")
-connection.commit()
+# cur.execute(f"DELETE FROM users WHERE login='anna';")
+# connection.commit()
 
 
 
